@@ -1,0 +1,49 @@
+{
+  "name": "@izonnet-web-solution/react-native-dropdown-uikit",
+  "version": "1.0.2",
+  "description": "Zero native dependency, high-performance, keyboard-aware React Native dropdown UI kit with 10 production variants.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "react-native": "src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0"
+  },
+  "keywords": [
+    "react-native",
+    "dropdown",
+    "select",
+    "picker",
+    "multi-select",
+    "autocomplete",
+    "bottom-sheet",
+    "cascading",
+    "country-picker",
+    "grouped",
+    "zero-dependency",
+    "typescript"
+  ],
+  "author": "Nilesh Ahir",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Izonnet-Web-Solution/react-native-dropdown-uikit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Izonnet-Web-Solution/react-native-dropdown-uikit/issues"
+  },
+  "homepage": "https://github.com/Izonnet-Web-Solution/react-native-dropdown-uikit#readme"
+}

@@ -73,3 +73,25 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# NPM & Auth Tokens (CRITICAL FOR SECURITY)
+.npmrc
+**/.npmrc
+*.tgz
+
+# Build Outputs & Artifacts
+dist/
+packages/*/dist/
+*.tsbuildinfo
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# IDE & Editors
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+

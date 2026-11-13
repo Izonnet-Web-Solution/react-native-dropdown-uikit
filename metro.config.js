@@ -1,4 +1,7 @@
+const path = require('path');
 const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
+
+const packagePath = path.resolve(__dirname, 'packages/react-native-dropdown-uikit');
 
 /**
  * Metro configuration
@@ -6,6 +9,13 @@ const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
  *
  * @type {import('@react-native/metro-config').MetroConfig}
  */
-const config = {};
+const config = {
+  watchFolders: [packagePath],
+  resolver: {
+    extraNodeModules: {
+      'react-native-dropdown-uikit': packagePath,
+    },
+  },
+};
 
 module.exports = mergeConfig(getDefaultConfig(__dirname), config);
